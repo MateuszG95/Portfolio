@@ -1,0 +1,99 @@
+<html>
+<head>
+
+	<title> Mateusz Gruza's Portfolio </title>
+	<meta name="author" content="Mateusz Gruza">
+	<meta name="description" content="A few words about me...">
+	<meta name="keywords" content="mateusz, gruza, portfolio">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
+	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="wrapper">
+  
+  <header>
+    <div id="logo">
+    </div>
+    
+   </header>
+
+	<nav>
+	
+      <div id="mainmenu">
+        <ul class="topmenu">
+          <li><a href="index.html#">Strona G³ówna</a></li>
+          <li><a href="index.html#tasks">Czym siê zajmujê</a></li>
+          <li><a href="index.html#contact">Kontakt</a></li>
+          <li><a href="#">Mockupy</a></li>
+        </ul>
+		</div>
+    </nav>  
+<main>
+<section class="content">
+	<div id="gallery">
+	<h1>Mockupy platformy gamingowej</h1>
+	<a href="mockups/InDeep-Home.png" data-lightbox="mygallery" data-title="InDeep Home"><img src="mockups/InDeep-Home-small.png"></a>
+	<a href="mockups/InDeep-Wallet.png" data-lightbox="mygallery" data-title="InDeep Wallet"><img src="mockups/InDeep-wallet-small.png"></a>
+	<a href="mockups/InDeep-store.PNG" data-lightbox="mygallery" data-title="InDeep Store"><img src="mockups/InDeep-store-small.PNG"></a>
+	<a href="mockups/InDeep-library.png" data-lightbox="mygallery" data-title="InDeep Library"><img src="mockups/InDeep-library-small.png"></a>
+	<a href="mockups/InDeep-launcher.png" data-lightbox="mygallery" data-title="InDeep Launcher"><img src="mockups/InDeep-launcher-small.png"></a>
+	<a href="mockups/InDeep-launcher-login.png" data-lightbox="mygallery" data-title="InDeep Launcher Login"><img src="mockups/InDeep-launcher-login-small.png"></a>
+	<a href="mockups/InDeep-launcher-license-accepted.png" data-lightbox="mygallery" data-title="InDeep Launcher License"><img src="mockups/InDeep-launcher-license-accepted-small.png"></a>
+	<a href="mockups/InDeep-launcher-update-dialog.png" data-lightbox="mygallery" data-title="InDeep Launcher Update"><img src="mockups/InDeep-launcher-update-dialog-small.png"></a>
+	
+	
+	
+	</div>
+</section>
+</main>
+	
+</div>
+
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('#mainmenu').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('#mainmenu').addClass('sticky');
+	} else {
+		$('#mainmenu').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
