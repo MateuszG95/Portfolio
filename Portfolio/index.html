@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title> Mateusz Gruza's Portfolio </title>
+	<meta name="author" content="Mateusz Gruza">
+	<meta name="description" content="A few words about me...">
+	<meta name="keywords" content="mateusz, gruza, portfolio">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+</head>
+<body>
+  
+ <div class="wrapper">
+  
+  <header>
+    <div id="logo">
+    </div>
+    
+   </header>
+   
+    <nav>
+	
+      <div id="mainmenu">
+        <ul class="topmenu">
+          <li><a href="#">Strona Główna</a></li>
+          <li><a href="#tasks">Czym się zajmuję</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="mockupy.html">Mockupy</a></li>
+        </ul>
+
+    </nav>  
+
+ </div>
+<main>
+<section class="content">
+  <section id="about">
+    <div class="box">
+      <h1> O mnie </h1>
+	<div id="about-content">  
+      <div id="description">
+             <p>  Nazywam się Mateusz Gruza i urodziłem się 21 czerwca 1995 roku we Wrocławiu. Od momentu zakończenia studiów na Politechnice Wrocławskiej, uczę się na co dzień tworzyć coraz lepsze witryny przy pomocy języka JavaScript. Od 2016 roku interesuję się tematyką technologii Blockchain oraz jej zastosowań w życiu codziennym. W 2017 roku rozpocząłem prace nad projektem własnej zdecentralizowanej platformy gamingowej zawartej w architekturze P2P. </p>
+			 </div>
+  
+  <div id="profile">
+    <img id="me" src="img/photo.jpg" alt="zdjecie, profilowe">
+    </div>
+    </div>
+	</div>
+  </section>
+
+  <section id="tasks">
+    <div class="box-shadow">
+	<div class="box-shadow-space">
+	</div>
+	<h1>Czym się zajmuję</h1>
+      <div id="pierwszy">
+		<div class="inside-box-back">
+        <p> Tworzę strony internetowe oparte o CMS Wordpress. Mam doświadczenie w tworzeniu zarówno one page'y, jak i sklepów online, opartych na woocommerce.
+		</p>
+		</div>
+      </div>
+
+      
+	 
+	  <div id="drugi">
+				<div class="inside-box-back">
+				<p> Potrafię zoptymalizować stronę pod kątem wyszukiwarek, jak i również zadbać o jej pozycjonowanie.
+				</p></div>
+		</div>
+		
+     
+	  
+	 
+      <div id="trzeci">
+		<div class="inside-box-back">
+		  <p> Zaprojektuję wzory grafik, lub cały szablon gotowy do wdrożenia na stronę internetową. 
+		  </p></div>
+      </div>
+	 
+  
+  
+  
+  </div>
+
+
+  </section>
+
+  <section id="contact">
+    <div class="box">
+      <h1> Kontakt </h1>
+      <div id="contact-icons">
+        <a href="mailto:mat.gruza@gmail.com"><img id="gmail" src="img/gmail-icon.png" alt="gmail"></a>
+        <a href="https://github.com/MateuszG95/Portfolio" target="_blank"><img id="github" src="img/github-icon.png" alt="github"></a>
+		<a href="https://www.linkedin.com/in/mateusz-gruza-089a5b157/" target="_blank">	<img id="linkedin" src="img/linkedin-icon.png" alt="linkedin"></a>
+      </div>
+    </div>
+  </section>
+  
+</section>
+  
+<footer>
+    <p> 
+       &copy Mateusz Gruza 2020. All rights reserved.
+    </p>
+</footer>
+</main>
+
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('#mainmenu').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('#mainmenu').addClass('sticky');
+	} else {
+		$('#mainmenu').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+</body>
+</html>
